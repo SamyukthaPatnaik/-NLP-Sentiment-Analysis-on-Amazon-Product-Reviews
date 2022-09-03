@@ -1,6 +1,7 @@
-# NLP-Sentiment-Analysis-on-Amazon-Product-Reviews
-Sentiment Analysis is a famous NLP use-case.
-
-Sentiment Analysis for Amazon Product Reviews is the simplest way to know whether the product is having a Positive Reviews or Negative Reviews based on the customers reviews and ratings to the particular product.
-
-It includes- Web Scrapping, EDA, Data Visualizations, Text Mining, Model Building & Deployment.
+# NLP- (Sentiment Analysis on Amazon Product Reviews)
+- Designed & developed a model in order to help companies identify their target market to better serve their customers.
+- It Includes: Data understanding, collection, cleaning, pre-processing, testing, analysis, model building and visualizations
+in python.
+- Deployed using streamlit where a company can have a complete insights/analysis of each customer.
+- Performs clustering to summarize customer segments & used various machine learning algorithms such as Support
+Vector Machine (SVM), k-Nearest Neighbors (KNN), Random Forest.

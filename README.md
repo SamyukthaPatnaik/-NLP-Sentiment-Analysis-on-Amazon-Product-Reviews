@@ -24,3 +24,5 @@ To deploy this project run
 - Amazon all reviews wordcloud
 
 ![Wordcloud](https://user-images.githubusercontent.com/92504503/188309477-11eeafb5-e5bd-4b2c-9932-51aa0946b47e.png)
+
+

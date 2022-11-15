@@ -26,3 +26,6 @@ To deploy this project run
 ![Wordcloud](https://user-images.githubusercontent.com/92504503/188309477-11eeafb5-e5bd-4b2c-9932-51aa0946b47e.png)
 
 
+## Note:
+
+If any jupyter file showing this message``the notebook took too long to render``, then dont forget we can copy the URL of the jupyter notebook into [nbviewer](https://nbviewer.jupyter.org/) .

@@ -1,7 +1,7 @@
 # NLP- (Sentiment Analysis on Amazon Product Reviews)
 - It is a simplest way to know whether the product is having a **positive reviews or negative reviews** based on the
 customers tweets & ratings to the particular product.
-- Created some amazing visualizations and **wordClouds** by **web-scrapping** 100 pages of the amazon in python for all the
+- Created some amazing visualizations and **wordclouds** by **web-scrapping** 100 pages of the amazon in python for all the
 tweets after removing the **stopwords, punctuations, emojis**, etc.
 - Used various **machine learning** algorithms like **SVC, KNN, Bagging Boosting, Random Forest, XGBoost** & deployed using
 streamlit.

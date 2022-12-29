@@ -15,6 +15,7 @@ To deploy this project run
   streamlit run main.py 
 ```
 
+
 - Streamlit Main Page
 
 ![Streamlit](https://user-images.githubusercontent.com/92504503/188309422-76af2ebc-a7ed-4b2a-91e8-677b73fe844a.png)

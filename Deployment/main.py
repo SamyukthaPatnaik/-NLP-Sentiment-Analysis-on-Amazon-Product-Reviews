@@ -103,25 +103,6 @@ if choice == 'Link':
             sns.histplot(data=amazon, x='rating')
             plt.title("Histogram")
             st.pyplot(fig_hist)
-            # elif plot == "Line Plot":
-            #     fig_line = plt.figure (figsize=(10, 4))
-            #     plt.title('Line Plot')
-            #     # sns.lineplot (x=rating_count['Rating'], y=rating_count['Rating count'], data=rating_count)
-            #     sns.lineplot ( x=['Rating'], y=["rating"].count(), data=amazon )
-            #     st.pyplot (fig_line)
-            # elif plot == "Pie Chart":
-            #     # explodes = (0.1, 0, 0, 0, 0)
-            #     fig_pie = go.Figure ( go.Pie ( labels=rating_count ['Rating'], values=rating_count ['Rating count'],
-            #                                    hoverinfo="label+value", textinfo="value" ) )
-            #     plt.title ( 'Pie Chart' )
-            #     st.subheader ( "Pie Chart for [Count of Ratings]" )
-            #     st.plotly_chart ( fig_pie )
-            # else:
-            #     fig_scat = plt.figure ( figsize=(10, 4) )
-            #     plt.title ( 'Scatter Plot' )
-            #     sns.scatterplot ( x=rating_count ['Rating'], y=rating_count ['Rating count'], data=rating_count )
-            #     st.pyplot ( fig_scat )
-            #************************************************#
 
             # removing all the stopwords in the column
             stop = stopwords.words ( 'english' )
@@ -321,5 +302,10 @@ elif choice == 'Dataset':
             st.write("negative")
 
 else:
+<<<<<<< HEAD
     about = 'http://localhost:8502'
+=======
+    # About page 
+    about = 'http://localhost:8504'
+>>>>>>> d63bf7e855d885b51d5e4fafb38d08eb686ae562
     webbrowser.open_new_tab(about)

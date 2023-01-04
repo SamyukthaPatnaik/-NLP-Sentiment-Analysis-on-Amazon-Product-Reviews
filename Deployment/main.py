@@ -321,5 +321,5 @@ elif choice == 'Dataset':
             st.write("negative")
 
 else:
-    about = 'http://localhost:8504'
+    about = 'http://localhost:8502'
     webbrowser.open_new_tab(about)

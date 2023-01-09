@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 # from subprocess import call
 import requests
 from bs4 import BeautifulSoup
-# import urllib.parse
+import urllib.parse
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
@@ -46,7 +46,7 @@ if choice == 'Link':
 
     if search_button: # or st.session_state.load_state:
         # st.session_state.load_state = True
-        if input_url == "https://www.amazon.in/Rockerz-370-Headphone-Bluetooth-Lightweight/product-reviews/B0856HNMR7/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews":
+        if input_url == "https://www.amazon.in/Rockerz-370-Headphone-Bluetooth-Lightweight/product-reviews/B0856HNMR7/re=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews":
             image = Image.open ('product.png')
             st.image (image, caption='Product')
 
@@ -149,15 +149,15 @@ if choice == 'Link':
             #countvectorizer with Bi gram and tri gram
             # Bi-gram
             def get_top_n2_words(corpus, n=None):
-                vec1 = CountVectorizer ( ngram_range=(2, 2),
-                                         max_features=2000 ).fit ( corpus )
-                bag_of_words = vec1.transform ( corpus )
-                sum_words = bag_of_words.sum ( axis=0 )
-                words_freq = [(word, sum_words [0, idx]) for word, idx in
-                              vec1.vocabulary_.items ()]
-                words_freq = sorted ( words_freq, key=lambda x: x [1],
-                                      reverse=True )
-                return words_freq [:n]
+            vec1 = CountVectorizer ( ngram_range=(2, 2),
+                                     max_features=2000 ).fit ( corpus )
+            bag_of_words = vec1.transform ( corpus )
+            sum_words = bag_of_words.sum ( axis=0 )
+            words_freq = [(word, sum_words [0, idx]) for word, idx in
+                          vec1.vocabulary_.items ()]
+            words_freq = sorted ( words_freq, key=lambda x: x [1],
+                                  reverse=True )
+            return words_freq [:n]
             top2_words = get_top_n2_words ( amazon ['reviews'], n=5000 )
             top2_df = pd.DataFrame ( top2_words )
             top2_df.columns = ["Bi-gram", "Freq"]
@@ -165,15 +165,15 @@ if choice == 'Link':
 
             #tri gram
             def get_top_n3_words(corpus, n=None):
-                vec1 = CountVectorizer ( ngram_range=(3, 3),
-                                         max_features=2000 ).fit ( corpus )
-                bag_of_words = vec1.transform ( corpus )
-                sum_words = bag_of_words.sum ( axis=0 )
-                words_freq = [(word, sum_words [0, idx]) for word, idx in
-                              vec1.vocabulary_.items ()]
-                words_freq = sorted ( words_freq, key=lambda x: x [1],
-                                      reverse=True )
-                return words_freq [:n]
+            vec1 = CountVectorizer ( ngram_range=(3, 3),
+                                     max_features=2000 ).fit ( corpus )
+            bag_of_words = vec1.transform ( corpus )
+            sum_words = bag_of_words.sum ( axis=0 )
+            words_freq = [(word, sum_words [0, idx]) for word, idx in
+                          vec1.vocabulary_.items ()]
+            words_freq = sorted ( words_freq, key=lambda x: x [1],
+                                  reverse=True )
+            return words_freq [:n]
             top3_words = get_top_n3_words ( amazon ['reviews'], n=5000 )
             top3_df = pd.DataFrame ( top3_words )
             top3_df.columns = ["Tri-gram", "Freq"]
@@ -272,8 +272,6 @@ if choice == 'Link':
         st.header("Press [Search] Button to start Sentiment Analysis ")
         sentiment_image = Image.open("analysis.png")
         st.image(sentiment_image, caption= "Analysis", width=1000)
-
-
 
 elif choice == 'Dataset':
     st.subheader ("Dataset")

@@ -302,10 +302,7 @@ elif choice == 'Dataset':
             st.write("negative")
 
 else:
-<<<<<<< HEAD
+
     about = 'http://localhost:8502'
-=======
-    # About page 
-    about = 'http://localhost:8504'
->>>>>>> d63bf7e855d885b51d5e4fafb38d08eb686ae562
+    # About page
     webbrowser.open_new_tab(about)

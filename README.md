@@ -5,7 +5,7 @@ customers tweets & ratings to the particular product.
 tweets after removing the **stopwords, punctuations, emojis**, etc.
 - Used various **machine learning** algorithms like **SVC, KNN, Bagging Boosting, Random Forest, XGBoost** & deployed using
 streamlit.
-- Developer Tools IDE's- Pycharm, Jupyter Notebook .
+- Developer Tools IDE's- Pycharm, Jupyter Notebook.
 
 ### Deployment
 

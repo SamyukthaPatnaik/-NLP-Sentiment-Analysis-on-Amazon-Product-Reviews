@@ -10,7 +10,6 @@ streamlit.
 ### Deployment
 
 To deploy this project run
-
 ```bash 
   streamlit run main.py 
 ```

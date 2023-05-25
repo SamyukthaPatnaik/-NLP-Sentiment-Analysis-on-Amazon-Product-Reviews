@@ -8,7 +8,6 @@ streamlit.
 - Developer Tools IDE's- Pycharm, Jupyter Notebook
 
 ### Deployment
-
 To deploy this project run
 ```bash 
   streamlit run main.py 
